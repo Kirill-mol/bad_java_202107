@@ -1,4 +1,4 @@
-package com.bad_java.homework.hyperskill.decrypt_encrypt.part_6.encryptdecrypt;
+package com.bad_java.homework.hyperskill.decrypt_encrypt.part_6;
 
 import java.io.InputStream;
 import java.io.PrintStream;

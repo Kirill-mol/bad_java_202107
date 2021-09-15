@@ -1,4 +1,4 @@
-package com.bad_java.homework.hyperskill.decrypt_encrypt.part_6.encryptdecrypt.encoder;
+package com.bad_java.homework.hyperskill.decrypt_encrypt.part_6.encoder;
 
 /**
  * @author Kirill Mololkin Kirill-mol 09.09.2021

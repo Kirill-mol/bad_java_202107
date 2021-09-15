@@ -1,4 +1,4 @@
-package com.bad_java.homework.hyperskill.decrypt_encrypt.part_6.encryptdecrypt.encoder;
+package com.bad_java.homework.hyperskill.decrypt_encrypt.part_6.encoder;
 
 /**
  * @author Kirill Mololkin Kirill-mol 09.09.2021
@@ -46,7 +46,7 @@ public class ShiftEncryptorDescriptor implements EncryptorDescriptor {
 		return stringBuilder.toString();
 	}
 
-	public char encryptLowerChar(char ch) {
+	private char encryptLowerChar(char ch) {
 		if (ch + shift > 'z') {
 			return (char) ('a' + (ch + shift) % 'z' - 1);
 		} else {
@@ -54,7 +54,7 @@ public class ShiftEncryptorDescriptor implements EncryptorDescriptor {
 		}
 	}
 
-	public char encryptUpperChar(char ch) {
+	private char encryptUpperChar(char ch) {
 		if (ch + shift > 'Z') {
 			return (char) ('A' + (ch + shift) % 'Z' - 1);
 		} else {
@@ -62,7 +62,7 @@ public class ShiftEncryptorDescriptor implements EncryptorDescriptor {
 		}
 	}
 
-	public char decryptLowerChar(char ch) {
+	private char decryptLowerChar(char ch) {
 		if (ch - shift < 'a') {
 			return (char) ('z' - (shift % ('z' - 'a') - (ch - 'a') - 1));
 		} else {
@@ -70,7 +70,7 @@ public class ShiftEncryptorDescriptor implements EncryptorDescriptor {
 		}
 	}
 
-	public char decryptUpperChar(char ch) {
+	private char decryptUpperChar(char ch) {
 		if (ch - shift < 'A') {
 			return (char) ('Z' - (shift % ('Z' - 'A') - (ch - 'A') - 1));
 		} else {
